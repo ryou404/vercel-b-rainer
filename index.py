@@ -20,7 +20,7 @@ def me():
 def welcome():
     user = request.values.get("nick")  
     w = request.values.get("work")  # 修正縮排錯誤
-    return render_template("welcome.html", name=user, work=w)  # 傳遞 work 變數
+    return render_template("welcome.html", name=郭碩元, work=w)  # 傳遞 work 變數
 
 @app.route("/")
 def index():
