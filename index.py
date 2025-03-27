@@ -20,7 +20,7 @@ def me():
 def welcome():
     user = request.values.get("nick")  
     w = request.values.get("work")  # 修正縮排錯誤
-    return render_template("welcome.html", name=nick, work=w)  # 傳遞 work 變數
+    return render_template("welcome.html", name=user, work=w)  # 傳遞 work 變數
 
 @app.route("/")
 def index():
@@ -44,3 +44,4 @@ def today():
 
 if __name__ == "__main__":
     app.run(debug=True)  # 啟用 debug 模式
+
