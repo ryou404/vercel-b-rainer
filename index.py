@@ -24,7 +24,7 @@ def welcome():
 
 @app.route("/")
 def index():
-    homepage = "<h1>郭碩元 Python 網頁</h1>"
+    homepage = "<h1>郭碩元 Python 網頁(時間+8 & 傳值)</h1>"
     homepage += "<a href=/mis>MIS</a><br>"
     homepage += "<a href=/today>顯示日期時間</a><br>"
     homepage += "<a href=/welcome?nick=tcyang&work=developer>傳送使用者暱稱與工作</a><br>"
